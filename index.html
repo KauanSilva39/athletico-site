@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Athletico — Portal</title>
+
+  <!-- Fonte oficial Rajdhani -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS interno (exigência: CSS interno em pelo menos uma página) -->
+  <style>
+    /* pequenas variações locais: destaque do hero */
+    .hero {
+      padding: 28px 16px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    /* tornar o carrossel responsivo */
+    .carousel img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <img src="./imagens/Athletico_Paranaense_(Logo_2019).svg" alt="Escudo Athletico" class="logo"
+        style="width:44px;height:44px;vertical-align:middle;margin-right:10px;">
+      Club Athletico Paranaense
+    </h1>
+
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="elenco.html">Elenco</a></li>
+        <li><a href="torcida.html">Torcida</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="titulos.html">Títulos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+
+    <button id="toggleTema" aria-pressed="false" style="margin-top:10px;">Modo Claro</button>
+  </header>
+
+  <main>
+    <section class="hero" id="intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">Bem-vindo ao Portal do Furacão</h2>
+      <p>
+        Um portal com informações do Club Athletico Paranaense — história, elenco, torcida,
+        curiosidades e títulos. Saiba tudo sobre o maior do estado do Paraná aqui. Nós somos o Furacão!
+      </p>
+    </section>
+
+    <!-- CARROSSEL (Função DOM 1) -->
+    <section aria-label="Carrossel de imagens" class="carousel-section">
+      <h3>Galeria / Destaques</h3>
+      <div class="carousel" id="carousel" aria-live="polite">
+        <button id="prevBtn" aria-label="Anterior" class="carousel-control">◀</button>
+        <div class="carousel-track" id="carouselTrack" style="display:inline-block; width:80%;">
+          <!-- Imagens do carrossel - substitua pelos arquivos locais -->
+          <img src="./imagens/bruno.webp" alt="Athletico destaque 1">
+          <img src="./imagens/DerikJogo-1600-scaled.jpg" alt="Athletico destaque 2" style="display:none;">
+          <img src="./imagens/download.jpg" alt="Athletico destaque 3" style="display:none;">
+        </div>
+        <button id="nextBtn" aria-label="Próximo" class="carousel-control">▶</button>
+      </div>
+      <p style="font-size:0.9em; color:#ccc; margin-top:8px;">Use os botões para navegar ou aguarde a rotação
+        automática.</p>
+    </section>
+
+    <section aria-label="Resumo e links importantes" id="conteudo-visual">
+      <h3>Explore o Conteúdo</h3>
+
+      <div class="cards-container">
+        <a href="noticias.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/odair.jpg" alt="Notícias do Athletico">
+            <h4>Notícias do Furacão - Fique por dentro do dia a dia Rubro Negro</h4>
+          </article>
+        </a>
+
+        <a href="elenco.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/nova camisa2.jpg" alt="Elenco do Athletico">
+            <h4>Elenco Atual - quem joga atualmente pelo Rubro Negro</h4>
+          </article>
+        </a>
+
+        <a href="torcida.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/torcida.jpg" alt="Torcida">
+            <h4>Torcida — músicas e vídeos</h4>
+          </article>
+        </a>
+
+        <a href="curiosidades.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/EscudoCAP-1600.jpg" alt="curiosidades">
+            <h4>Curiosidades — informações e destaques</h4>
+          </article>
+        </a>
+
+        <a href="titulos.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/tacas.jpg" alt="Títulos">
+            <h4>Títulos — Veja as glórias do Furacão</h4>
+          </article>
+        </a>
+
+        <a href="cadastro.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/rony.webp" alt="Cadastro de Torcedor">
+            <h4>Cadastro de Torcedor</h4>
+          </article>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 — Projeto didático / Athletico Theme</p>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- adicionar nova página para ficar número par (talvez noticias?), adicionar o card dos titulos e dessa página nova, e depois checar tudo pra eliminar o que nao é necessario -->

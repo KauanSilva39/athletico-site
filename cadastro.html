@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Athletico — Cadastro de Torcedor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><img src="./imagens/Athletico_Paranaense_(Logo_2019).svg" alt="Escudo" class="logo">Cadastro de Torcedor</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="elenco.html">Elenco</a></li>
+        <li><a href="torcida.html">Torcida</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="titulos.html">Títulos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+    <button id="toggleTema" aria-pressed="false" style="margin-top:10px;">Modo Claro</button>
+  </header>
+
+  <main>
+    <section aria-labelledby="cadastro-title">
+      <h2 id="cadastro-title">Formulário de Cadastro</h2>
+      <form id="formTorcedor" novalidate>
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com">
+
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" id="nascimento" name="nascimento">
+
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade">
+
+        <label for="posicao">Posição favorita</label>
+        <select id="posicao" name="posicao">
+          <option value="">Selecione</option>
+          <option>Goleiro</option>
+          <option>Zagueiro</option>
+          <option>Meia</option>
+          <option>Atacante</option>
+        </select>
+
+        <label for="camisa">Número da camisa</label>
+        <input type="number" id="camisa" name="camisa" min="1" max="99">
+
+        <label for="opiniao">Por que você gosta do Furacão?</label>
+        <textarea id="opiniao" name="opiniao" rows="4" placeholder="Escreva sua opinião"></textarea>
+
+        <fieldset style="margin-top:10px;">
+          <legend>Preferências</legend>
+          <label><input type="checkbox" id="newsletter" name="newsletter"> Quero receber novidades</label><br>
+          <label><input type="checkbox" id="termos" name="termos"> Aceito os termos</label>
+        </fieldset>
+
+        <p id="formErrors" style="color:#ffcccc;"></p>
+        <p id="formSuccess" style="color:#bfffbf;"></p>
+
+        <button type="button" id="btnEnviar">Enviar Cadastro</button>
+      </form>
+    </section>
+    <section aria-label="Resumo e links importantes" id="conteudo-visual">
+      <h3>Explore o Conteúdo</h3>
+
+      <div class="cards-container">
+
+        <a href="index.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/bruno.webp" alt="Início">
+            <h4>Página Inicial</h4>
+          </article>
+        </a>
+
+        <a href="noticias.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/odair.jpg" alt="Notícias do Athletico">
+            <h4>Notícias do Furacão - Fique por dentro do dia a dia Rubro Negro</h4>
+          </article>
+        </a>
+
+        <a href="elenco.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/nova camisa2.jpg" alt="Elenco do Athletico">
+            <h4>Elenco Atual - quem joga atualmente pelo Rubro Negro</h4>
+          </article>
+        </a>
+
+        <a href="torcida.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/torcida.jpg" alt="Torcida">
+            <h4>Torcida — músicas e vídeos</h4>
+          </article>
+        </a>
+
+        <a href="curiosidades.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/EscudoCAP-1600.jpg" alt="curiosidades">
+            <h4>Curiosidades — informações e destaques</h4>
+          </article>
+        </a>
+
+        <a href="titulos.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/tacas.jpg" alt="Títulos">
+            <h4>Títulos — Veja as glórias do Furacão</h4>
+          </article>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 — Cadastro</p>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

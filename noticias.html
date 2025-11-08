@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Últimas Notícias — Athletico Paranaense</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      <img src="./imagens/Athletico_Paranaense_(Logo_2019).svg" alt="Escudo" class="logo">
+      Últimas Notícias
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="elenco.html">Elenco</a></li>
+        <li><a href="torcida.html">Torcida</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="titulos.html">Títulos</a></li>
+        <li><a href="cadastro.html" class="ativo">Cadastro</a></li>
+      </ul>
+    </nav>
+    <button id="toggleTema">Modo Claro</button>
+  </header>
+
+  <main>
+    <section class="noticias" aria-label="Últimas notícias do Athletico">
+      <h2>Últimas Notícias do Furacão</h2>
+      <p id="atualizacao"></p>
+
+      <div class="noticia-card">
+        <h3>Odair Hellmann ganha força e deve seguir no comando do Athletico em 2026</h3>
+        <img src="./imagens/OdairCRBxCAP-1200-2-scaled-1.jpg" alt="Odair Hellmann na beira do gramado">
+        <p class="resumo">Clube vê evolução mental e de gestão no trabalho do treinador e planeja continuidade,
+          independentemente da divisão</p>
+        <button class="btn-detalhes" data-target="detalhe1">Ver detalhes</button>
+        <div id="detalhe1" class="noticia-detalhe">
+          <p>O Athletico Paranaense caminha para manter Odair Hellmann no comando técnico em 2026. A informação, apurada
+            pela Trétis, aponta que o treinador ganhou moral nos bastidores e é visto internamente como o nome ideal
+            para seguir liderando o projeto do clube, esteja o time na Série A ou na Série B.
+
+            O contrato de Odair vai até maio de 2025, mas a diretoria já discute uma renovação antecipada, algo que
+            também agrada ao próprio técnico. Em entrevista recente, ele afirmou que “renovaria por mais dois anos”,
+            demonstrando o desejo de permanecer em Curitiba.
+
+            Fontes internas do Athletico destacam que o trabalho de Odair foi essencial na gestão de crise e na
+            recuperação emocional do elenco durante a temporada. O clube entende que o técnico conseguiu reorganizar o
+            ambiente, melhorar o clima com o grupo e aproximar-se da torcida, com uma comunicação direta e transparente.
+          </p>
+        </div>
+      </div>
+
+      <div class="noticia-card">
+        <h3>Odair Hellmann convoca torcida para lotar Arena e empurrar Athletico rumo ao acesso</h3>
+        <img src="./imagens/jogo-15-scaled-1.jpg" alt="Arena da Baixada cheia pra duelo decisivo"
+          style="width:100%;max-width:700px;border-radius:10px;margin:20px 0;display: block; margin-left: auto; margin-right: auto; margin-top: auto;">
+        <p class="resumo">Técnico exalta paixão da torcida e reforça que cada jogo é decisivo para garantir a volta à
+          Série A</p>
+        <button class="btn-detalhes" data-target="detalhe2">Ver detalhes</button>
+        <div id="detalhe2" class="noticia-detalhe">
+          <p>Após a vitória do Athletico em cima do Goiás no último sábado, na Serrinha, Odair Hellmann protagonizou um
+            pronunciamento carregado de emoção, reafirmando a necessidade de união entre time e torcida para os próximos
+            desafios da Série B. O treinador não poupou energia ao falar sobre o papel do torcedor na reta final da
+            competição e reforçou a importância do apoio incondicional em momentos decisivos.
+
+            Odair exaltou a dedicação dos torcedores, agradeceu a presença nos jogos e enfatizou que agora é hora de
+            empurrar o time para o acesso: “Agora, torcedor, é momento daquela união que falei lá atrás. Precisamos
+            colocar 50 mil pessoas dentro da Arena e 10 mil pessoas na rua. Precisamos levar o ônibus até o vestiário,
+            gritar o nome do jogador, apoiar os caras e empurrar a bola para dentro. Não é uma questão de pacto, é de
+            paixão e amor ao clube”.</p>
+        </div>
+      </div>
+
+      <div class="noticia-card">
+        <h3>Mastriani fora dos planos: Athletico planeja negociar o atacante em 2026</h3>
+        <img src="./imagens/mastri.jpg" alt="Mastriani em campo">
+        <p class="resumo">Emprestado ao Botafogo e com alto salário, uruguaio não deve voltar a vestir a camisa do
+          Furacão</p>
+        <button class="btn-detalhes" data-target="detalhe3">Ver detalhes</button>
+        <div id="detalhe3" class="noticia-detalhe">
+          <p>O futuro de Gonzalo Mastriani no Athletico Paranaense parece cada vez mais distante. Emprestado ao
+            Botafogo, o atacante vive momento complicado no Rio de Janeiro, com apenas um gol marcado e uma sequência de
+            lesões. Além disso, segundo informações apuradas pela Trétis, o jogador tem se dedicado paralelamente aos
+            estudos para se tornar executivo de futebol.
+
+            Com contrato válido até 31 de dezembro de 2026, Mastriani dificilmente retornará ao elenco rubro-negro. O
+            Athletico já planeja negociar o jogador no início da próxima temporada, buscando o modelo de negócio mais
+            viável para as finanças do clube.</p>
+        </div>
+      </div>
+    </section>
+    <section aria-label="Resumo e links importantes" id="conteudo-visual">
+      <h3>Explore o Conteúdo</h3>
+
+      <div class="cards-container">
+        <a href="index.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/bruno.webp" alt="Início">
+            <h4>Página Inicial</h4>
+          </article>
+        </a>
+
+        <a href="elenco.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/nova camisa2.jpg" alt="Elenco do Athletico">
+            <h4>Elenco Atual - quem joga atualmente pelo Rubro Negro</h4>
+          </article>
+        </a>
+
+        <a href="torcida.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/torcida.jpg" alt="Torcida">
+            <h4>Torcida — músicas e vídeos</h4>
+          </article>
+        </a>
+
+        <a href="curiosidades.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/EscudoCAP-1600.jpg" alt="curiosidades">
+            <h4>Curiosidades — informações e destaques</h4>
+          </article>
+        </a>
+
+        <a href="titulos.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/tacas.jpg" alt="Títulos">
+            <h4>Títulos — Veja as glórias do Furacão</h4>
+          </article>
+        </a>
+
+        <a href="cadastro.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/rony.webp" alt="Cadastro de Torcedor">
+            <h4>Cadastro de Torcedor</h4>
+          </article>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 — Últimas Notícias Athletico Paranaense</p>
+  </footer>
+
+  <button id="btnTopo" title="Voltar ao topo">↑</button>
+  <script src="script.js"></script>
+</body>
+
+</html>

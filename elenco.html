@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elenco - Club Athletico Paranaense</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><img src="./imagens/Athletico_Paranaense_(Logo_2019).svg" alt="Escudo" class="logo"> Elenco do Furacão</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="elenco.html">Elenco</a></li>
+        <li><a href="torcida.html">Torcida</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="titulos.html">Títulos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+    <button id="toggleTema" aria-pressed="false" style="margin-top:10px;">Modo Claro</button>
+  </header>
+
+  <main>
+    <!-- ======= Tabela da Série B ======= -->
+    <section id="tabelaSerieB">
+      <h2>📊 Situação Atual na Série B 2025</h2>
+      <p>Confira a colocação do Club Athletico Paranaense na reta final da Série B.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Jogador</th>
+            <th>Posição</th>
+            <th>Jogos 2025</th>
+            <th>Gols 2025</th>
+            <th>Valor de Mercado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bruno Zapelli</td>
+            <td>Meia</td>
+            <td>31</td>
+            <td>4</td>
+            <td>~R$25M</td>
+          </tr>
+          <tr>
+            <td>Lucas Esquivel</td>
+            <td>Lateral Esquerdo</td>
+            <td>26</td>
+            <td>1</td>
+            <td>~R$18,5M</td>
+          </tr>
+          <tr>
+            <td>Gaston Benavidez</td>
+            <td>Lateral Direito</td>
+            <td>21</td>
+            <td>1</td>
+            <td>~R$19,8M</td>
+          </tr>
+          <tr>
+            <td>Kevin Viveros</td>
+            <td>Atacante</td>
+            <td>19</td>
+            <td>10</td>
+            <td>~R$35,8M</td>
+          </tr>
+          <tr>
+            <td>Julimar</td>
+            <td>Atacante</td>
+            <td>11</td>
+            <td>3</td>
+            <td>~R$7,5M</td>
+          </tr>
+          <tr>
+            <td>Léozinho</td>
+            <td>Ponta</td>
+            <td>30</td>
+            <td>2</td>
+            <td>~R$1M</td>
+          </tr>
+          <tr data-time="Athletico Paranaense">
+            <td>Athletico Paranaense (elenco)</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>~R$240M</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button id="destaqueAthletico">Destacar Athletico</button>
+    </section>
+
+    <!-- ===== Carrossel do Elenco (versão simples e funcional) ===== -->
+    <section id="carrosselElenco">
+      <h3>📸 Elenco em Ação</h3>
+
+      <div class="carrossel-container">
+        <img src="./imagens/BrunoZapelli-1600.jpg" alt="Bruno Zapelli em campo" class="slide ativo">
+        <img src="./imagens/lucas-esquivel-athletico-paranaense-2025-1750977719-171134.jpg" alt="Lucas Esquivel em jogo"
+          class="slide">
+        <img src="./imagens/benavidez.jpg" alt="Gaston Benavidez se apresentando" class="slide">
+        <img src="./imagens/viveros.jpg" alt="Kevin Viveros comemorando" class="slide">
+        <img src="./imagens/julimar.jpg" alt="Julimar comemorando" class="slide">
+        <img src="./imagens/leozinho.jpg" alt="Leozinho comemorando" class="slide">
+      </div>
+
+      <div class="botoes-carrossel">
+        <button id="anteriorElenco">⏮️ Anterior</button>
+        <button id="proximoElenco">⏭️ Próximo</button>
+      </div>
+    </section>
+
+
+    <!-- ========== Curiosidades do Elenco (versão final e simples) ========== -->
+    <section id="curiosidadesElencoEstatica" class="card">
+      <h3>💬 Curiosidades do Elenco (2025)</h3>
+
+      <ul>
+        <li>O <strong>Athletico</strong> possui o elenco mais valioso da Série B 2025, estimado em cerca de <em>R$ 220,5
+            milhões</em>.</li>
+
+        <li><strong>Bruno Zapelli</strong> é o atleta mais caro da competição.</li>
+
+        <li>O clube já utilizou <strong>33 jogadores</strong> em 2025, mostrando a profundidade do plantel.</li>
+
+        <li>Há <strong>10 atletas estrangeiros</strong> no elenco do Furacão, o maior número da Série B.</li>
+
+        <li>A <strong>média de idade</strong> dos jogadores do elenco profissional em 2025 é de cerca de <em>25,2
+            anos</em>, mostrando renovação e aposta em talentos jovens.</li>
+
+        <li>A contratação de <strong>Kevin Viveros</strong> se tornou a mais cara da história do clube — cerca de
+          <em>US$ 5 milhões (~R$ 27,5 milhões)</em> por 70% dos direitos econômicos.</li>
+      </ul>
+
+      <p style="margin-top:12px; font-size:0.95rem; opacity:0.8;">
+        Fontes: <em>Transfermarkt, GE, CNN Brasil, MKT Esportivo</em> (dados atualizados até novembro de 2025).
+      </p>
+    </section>
+
+
+
+    <!-- ======= Por Dentro do Vestiário ======= -->
+    <section id="vestiario">
+      <h3>🏋️ Por Dentro do Vestiário</h3>
+      <ul>
+        <li>🔴 Média de idade do elenco: <strong>25,8 anos</strong></li>
+        <li>⚫ Média de posse de bola na Série B: <strong>61%</strong></li>
+        <li>🔥 Jogos sem sofrer gols: <strong>12 partidas</strong></li>
+        <li>🏆 Maior sequência de vitórias em 2025: <strong>7 jogos</strong></li>
+      </ul>
+    </section>
+
+    <section aria-label="Resumo e links importantes" id="conteudo-visual">
+  <h3>Explore o Conteúdo</h3>
+
+  <div class="cards-container">
+    <a href="index.html" class="card-link">
+      <article class="card">
+        <img src="./imagens/bruno.webp" alt="Início">
+        <h4>Página Inicial</h4>
+      </article>
+    </a>
+
+    <a href="noticias.html" class="card-link">
+      <article class="card">
+        <img src="./imagens/odair.jpg" alt="Notícias do Athletico">
+        <h4>Notícias do Furacão - Fique por dentro do dia a dia Rubro Negro</h4>
+      </article>
+    </a>
+
+    <a href="torcida.html" class="card-link">
+      <article class="card">
+        <img src="./imagens/torcida.jpg" alt="Torcida">
+        <h4>Torcida — músicas e vídeos</h4>
+      </article>
+    </a>
+
+    <a href="curiosidades.html" class="card-link">
+      <article class="card">
+        <img src="./imagens/EscudoCAP-1600.jpg" alt="Curiosidades">
+        <h4>Curiosidades — informações e destaques</h4>
+      </article>
+    </a>
+
+    <a href="titulos.html" class="card-link">
+      <article class="card">
+        <img src="./imagens/tacas.jpg" alt="Títulos">
+        <h4>Títulos — Veja as glórias do Furacão</h4>
+      </article>
+    </a>
+
+    <a href="cadastro.html" class="card-link">
+      <article class="card">
+        <img src="./imagens/rony.webp" alt="Cadastro de Torcedor">
+        <h4>Cadastro de Torcedor</h4>
+      </article>
+    </a>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 — Club Athletico Paranaense</p>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athletico — Torcida Rubro-Negra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><img src="./imagens/Athletico_Paranaense_(Logo_2019).svg" alt="Escudo" class="logo">Torcida Rubro-Negra</h1>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="elenco.html">Elenco</a></li>
+        <li><a href="torcida.html">Torcida</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="titulos.html">Títulos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+    <button id="toggleTema" aria-pressed="false" style="margin-top:10px;">Modo Claro</button>
+
+  </header>
+
+  <main>
+    <section aria-labelledby="torcida-intro">
+      <h2 id="torcida-intro">A Paixão da Maior Torcida do Sul</h2>
+      <p>
+        A torcida do Athletico é conhecida pela vibração e intensidade. No Caldeirão, o som dos cânticos ecoa com força
+        e emoção.
+      </p>
+    </section>
+
+    <section aria-label="Vídeo da torcida">
+      <h3>Assista à torcida em ação</h3>
+
+      <!-- vídeo -->
+      <video id="videoTorcida" width="100%" poster="./imagens/torcida1.jpg">
+        <source src="./midia/entrada.mp4" type="video/mp4">
+        Seu navegador não suporta a reprodução de vídeo.
+      </video>
+
+      <!-- botão personalizado -->
+      <button id="btnVideo" style="margin-top:10px;">▶️ Reproduzir Vídeo</button>
+    </section>
+
+
+    <section aria-label="Músicas da torcida">
+      <h3>Cantos do Furacão</h3>
+      <p>Ouça alguns dos principais cânticos que embalam a torcida rubro-negra!</p>
+
+      <div class="musicas">
+        <div class="musica">
+          <h4> Hino da Organizada</h4>
+          <audio id="audio1" controls>
+            <source src="./midia/fanaticos_ta_vindo_ai.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio.
+          </audio>
+          <button class="btnAudio" data-audio="audio1">Tocar / Pausar</button>
+        </div>
+
+        <div class="musica">
+          <h4> Canto das Arquibancadas</h4>
+          <audio id="audio2" controls>
+            <source src="./midia/eu_sou_caveira.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio.
+          </audio>
+          <button class="btnAudio" data-audio="audio2">Tocar / Pausar</button>
+        </div>
+
+        <div class="musica">
+          <h4> Canção pro rival</h4>
+          <audio id="audio3" controls>
+            <source src="./midia/corre_imperio.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio.
+          </audio>
+          <button class="btnAudio" data-audio="audio3">Tocar / Pausar</button>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Galeria da torcida">
+      <h3>Galeria da Torcida</h3>
+      <div class="galeria">
+        <figure>
+          <img src="./imagens/TorcidaPacto01-16001.jpg" alt="Torcida na Arena" class="thumb">
+          <figcaption>Torcida na Arena</figcaption>
+        </figure>
+        <figure>
+          <img src="./imagens/atletico-arena-torcida.jpg" alt="Bandeiras rubro-negras" class="thumb">
+          <figcaption>Bandeiras Rubro-Negras</figcaption>
+        </figure>
+        <figure>
+          <img src="./imagens/Mosaico3D-1200.jpg" alt="Mosaico do Athletico" class="thumb">
+          <figcaption>Mosaico Athletico</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-label="Resumo e links importantes" id="conteudo-visual">
+      <h3>Explore o Conteúdo</h3>
+
+      <div class="cards-container">
+
+        <a href="index.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/bruno.webp" alt="Início">
+            <h4>Página Inicial</h4>
+          </article>
+        </a>
+
+        <a href="noticias.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/odair.jpg" alt="Notícias do Athletico">
+            <h4>Notícias do Furacão - Fique por dentro do dia a dia Rubro Negro</h4>
+          </article>
+        </a>
+
+        <a href="elenco.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/nova camisa2.jpg" alt="Elenco do Athletico">
+            <h4>Elenco Atual - quem joga atualmente pelo Rubro Negro</h4>
+          </article>
+        </a>
+
+        <a href="curiosidades.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/EscudoCAP-1600.jpg" alt="curiosidades">
+            <h4>Curiosidades — informações e destaques</h4>
+          </article>
+        </a>
+
+        <a href="titulos.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/tacas.jpg" alt="Títulos">
+            <h4>Títulos — Veja as glórias do Furacão</h4>
+          </article>
+        </a>
+
+        <a href="cadastro.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/rony.webp" alt="Cadastro de Torcedor">
+            <h4>Cadastro de Torcedor</h4>
+          </article>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 — Torcida Rubro-Negra</p>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Títulos Históricos - Athletico Paranaense</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><img src="./imagens/Athletico_Paranaense_(Logo_2019).svg" alt="Escudo" class="logo"> Títulos Históricos</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="elenco.html">Elenco</a></li>
+        <li><a href="torcida.html">Torcida</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="titulos.html" class="ativo">Títulos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+    <button id="toggleTema" aria-pressed="false" style="margin-top:10px;">Modo Claro</button>
+  </header>
+
+  <main id="titulosMain">
+    <section class="titulo-bloco">
+      <h2>🏆 Campeonato Brasileiro — 2001</h2>
+      <button class="btn-toggle" data-target="detalhes2001">Mostrar detalhes</button>
+      <div id="detalhes2001" class="detalhes-titulo oculto">
+        <p>O Athletico Paranaense conquistou o Brasileirão de 2001, vencendo o São Caetano na volta da final com gol de
+          Alex Mineiro. Foi o primeiro título nacional do clube.</p>
+        <img src="./imagens/atletico-pr-campeaobrasileiro-2001-ae.jpg" alt="Athletico campeão 2001" class="img-titulo">
+        <video id="video2001" width="400">
+          <source src="./midia/titulo2001.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <br>
+        <div class="video-controles">
+          <button class="btn-voltar" data-video="video2001">⏪ Voltar 10s</button>
+          <button class="btn-video" data-video="video2001">▶ Reproduzir</button>
+          <button class="btn-avancar" data-video="video2001">⏩ Avançar 10s</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="titulo-bloco">
+      <h2>🏆 Copa Sul-Americana — 2018</h2>
+      <button class="btn-toggle" data-target="detalhes2018">Mostrar detalhes</button>
+      <div id="detalhes2018" class="detalhes-titulo oculto">
+        <p>Em 2018, o Furacão conquistou sua primeira taça internacional, vencendo o Junior Barranquilla nos pênaltis na
+          Arena da Baixada, com o General Thiago Heleno batendo o penal decisivo e cravando seu nome na história do
+          clube.</p>
+        <img src="./imagens/sula18.jpg" alt="Athletico campeão 2018" class="img-titulo">
+        <video id="video2018" width="400">
+          <source src="./midia/titulo2018.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <br>
+        <div class="video-controles">
+          <button class="btn-voltar" data-video="video2018">⏪ Voltar 10s</button>
+          <button class="btn-video" data-video="video2018">▶ Reproduzir</button>
+          <button class="btn-avancar" data-video="video2018">⏩ Avançar 10s</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="titulo-bloco">
+      <h2>🏆 Copa do Brasil — 2019</h2>
+      <button class="btn-toggle" data-target="detalhes2019">Mostrar detalhes</button>
+      <div id="detalhes2019" class="detalhes-titulo oculto">
+        <p>Em 2019, o Athletico venceu o Internacional e conquistou sua primeira Copa do Brasil, com gols de Léo
+          Cittadini e Rony na volta da grande final, em pleno Beira Rio lotado.</p>
+        <img src="./imagens/cdb19.jpg" alt="Athletico campeão 2019" class="img-titulo">
+        <video id="video2019" width="400">
+          <source src="./midia/titulo2019.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <br>
+        <div class="video-controles">
+          <button class="btn-voltar" data-video="video2019">⏪ Voltar 10s</button>
+          <button class="btn-video" data-video="video2019">▶ Reproduzir</button>
+          <button class="btn-avancar" data-video="video2019">⏩ Avançar 10s</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="titulo-bloco">
+      <h2>🏆 Copa Sul-Americana — 2021</h2>
+      <button class="btn-toggle" data-target="detalhes2021">Mostrar detalhes</button>
+      <div id="detalhes2021" class="detalhes-titulo oculto">
+        <p>Em 2021, o Furacão levantou novamente a Sul-Americana, vencendo o Red Bull Bragantino por 1x0 na final, com
+          golaço antológico de Nikão.</p>
+        <img src="./imagens/sula21.jpg" alt="Athletico campeão 2021" class="img-titulo">
+        <video id="video2021" width="400">
+          <source src="./midia/titulo2021.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <br>
+        <div class="video-controles">
+          <button class="btn-voltar" data-video="video2021">⏪ Voltar 10s</button>
+          <button class="btn-video" data-video="video2021">▶ Reproduzir</button>
+          <button class="btn-avancar" data-video="video2021">⏩ Avançar 10s</button>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Resumo e links importantes" id="conteudo-visual">
+      <h3>Explore o Conteúdo</h3>
+
+      <div class="cards-container">
+
+        <a href="index.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/bruno.webp" alt="Início">
+            <h4>Página Inicial</h4>
+          </article>
+        </a>
+
+        <a href="noticias.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/odair.jpg" alt="Notícias do Athletico">
+            <h4>Notícias do Furacão - Fique por dentro do dia a dia Rubro Negro</h4>
+          </article>
+        </a>
+
+        <a href="elenco.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/nova camisa2.jpg" alt="Elenco do Athletico">
+            <h4>Elenco Atual - quem joga atualmente pelo Rubro Negro</h4>
+          </article>
+        </a>
+
+        <a href="torcida.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/torcida.jpg" alt="Torcida">
+            <h4>Torcida — músicas e vídeos</h4>
+          </article>
+        </a>
+
+        <a href="curiosidades.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/EscudoCAP-1600.jpg" alt="curiosidades">
+            <h4>Curiosidades — informações e destaques</h4>
+          </article>
+        </a>
+
+        <a href="cadastro.html" class="card-link">
+          <article class="card">
+            <img src="./imagens/rony.webp" alt="Cadastro de Torcedor">
+            <h4>Cadastro de Torcedor</h4>
+          </article>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Athletico Paranaense — Títulos Históricos</p>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
