@@ -662,75 +662,98 @@ section[aria-label="Galeria da torcida"] .galeria figcaption {
   }
 }
 
-/* ============================================
-   📱 MENU HAMBÚRGUER PARA CELULARES
-   ============================================ */
+/* ===== MENU RESPONSIVO FINAL ===== */
+
+/* botão do menu: escondido no desktop */
+#btnMenu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* garante que o nav apareça normal no desktop */
+#navPrincipal {
+  display: block !important;
+}
+
 @media (max-width: 768px) {
-  /* Esconde o menu inicialmente */
-  nav {
-    display: none;
-    width: 100%;
-    background-color: #111;
-    border-top: 1px solid #a00;
-  }
-
-  /* Mostra quando ativo */
-  nav.ativo {
-    display: block;
-    animation: fadeMenu 0.3s ease;
-  }
-
-  /* Botão hambúrguer */
+  /* mostra botão e ajusta layout do header */
   #btnMenu {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.8rem;
-    cursor: pointer;
     display: block;
   }
 
-  body.modo-claro #btnMenu {
-    color: #000;
-  }
-
-  /* Estilo dos links dentro do menu aberto */
-  nav ul {
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-  }
-
-  nav a {
-    color: #fff;
-    font-size: 1.1rem;
-    text-decoration: none;
-    padding: 8px 14px;
-    transition: background 0.3s ease;
-  }
-
-  nav a:hover {
-    background-color: rgba(255, 0, 0, 0.2);
-    border-radius: 6px;
-  }
-
-  /* Animação suave ao abrir o menu */
-  @keyframes fadeMenu {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* Ajuste do header */
   header {
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+  }
+
+  /* esconde o nav no mobile até abrir */
+  #navPrincipal {
+    display: none !important;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #111;
+    border-top: 2px solid #a00;
+    padding: 12px 0;
+    z-index: 1000;
+  }
+
+  /* quando o menu está aberto */
+  #navPrincipal[data-open="true"] {
+    display: block !important;
+    animation: slideDown 0.25s ease;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* links em coluna no mobile */
+  #navPrincipal ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+  }
+
+  #navPrincipal a {
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  #navPrincipal a:hover {
+    background: rgba(255, 0, 0, 0.15);
+  }
+
+  body.modo-claro #navPrincipal {
+    background: #fff;
+  }
+  body.modo-claro #navPrincipal a {
+    color: #000;
   }
 }
+
+
+
 
 
 

@@ -295,15 +295,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.2 });
   noticias.forEach(n => obs.observe(n));
 
-  // ===== MENU HAMBÚRGUER =====
-const btnMenu = document.getElementById("btnMenu");
-const nav = document.querySelector("nav");
+  // ===== MENU HAMBÚRGUER RESPONSIVO =====
+document.addEventListener("DOMContentLoaded", () => {
+  const btnMenu = document.getElementById("btnMenu");
+  const nav = document.querySelector("nav");
 
-if (btnMenu && nav) {
-  btnMenu.addEventListener("click", () => {
-    nav.classList.toggle("ativo");
-    btnMenu.textContent = nav.classList.contains("ativo") ? "✕" : "☰";
-  });
-}
+  if (btnMenu && nav) {
+    btnMenu.addEventListener("click", () => {
+      nav.classList.toggle("ativo");
+      btnMenu.textContent = nav.classList.contains("ativo") ? "✕" : "☰";
+    });
+
+    // Fecha o menu ao clicar em qualquer link
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("ativo");
+        btnMenu.textContent = "☰";
+      });
+    });
+  }
+});
 
 });
