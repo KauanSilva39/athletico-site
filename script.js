@@ -294,4 +294,16 @@ document.addEventListener("DOMContentLoaded", () => {
     entradas.forEach(e => { if (e.isIntersecting) e.target.classList.add("visivel"); });
   }, { threshold: 0.2 });
   noticias.forEach(n => obs.observe(n));
+
+  // ===== MENU HAMBÚRGUER =====
+const btnMenu = document.getElementById("btnMenu");
+const nav = document.querySelector("nav");
+
+if (btnMenu && nav) {
+  btnMenu.addEventListener("click", () => {
+    nav.classList.toggle("ativo");
+    btnMenu.textContent = nav.classList.contains("ativo") ? "✕" : "☰";
+  });
+}
+
 });

@@ -662,6 +662,76 @@ section[aria-label="Galeria da torcida"] .galeria figcaption {
   }
 }
 
+/* ============================================
+   📱 MENU HAMBÚRGUER PARA CELULARES
+   ============================================ */
+@media (max-width: 768px) {
+  /* Esconde o menu inicialmente */
+  nav {
+    display: none;
+    width: 100%;
+    background-color: #111;
+    border-top: 1px solid #a00;
+  }
+
+  /* Mostra quando ativo */
+  nav.ativo {
+    display: block;
+    animation: fadeMenu 0.3s ease;
+  }
+
+  /* Botão hambúrguer */
+  #btnMenu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  body.modo-claro #btnMenu {
+    color: #000;
+  }
+
+  /* Estilo dos links dentro do menu aberto */
+  nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  nav a {
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 8px 14px;
+    transition: background 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 6px;
+  }
+
+  /* Animação suave ao abrir o menu */
+  @keyframes fadeMenu {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Ajuste do header */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 
 
 
