@@ -478,6 +478,191 @@ section[aria-label="Galeria da torcida"] .galeria figcaption {
   }
 }
 
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.galeria figure {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ============================================
+   🌐 AJUSTES RESPONSIVOS — MOBILE FIRST
+   ============================================ */
+
+/* --- Estilos gerais para telas menores que 768px (celulares) --- */
+@media (max-width: 768px) {
+  /* HEADER e NAV */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+
+  /* BOTÃO DE TEMA */
+  #toggleTema {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  /* TEXTOS E SEÇÕES */
+  h2, h3, h4 {
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* CARDS DE CONTEÚDO */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* GALERIAS E IMAGENS */
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .galeria img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  /* VÍDEOS */
+  video, iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* TABELAS */
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  caption {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* BOTÕES */
+  button, .btn-detalhes, .btn-toggle {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+    font-size: 0.95rem;
+  }
+
+  /* FORMULÁRIOS */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 6px;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  #btnTopo {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 12px;
+  }
+}
+
+/* --- Ajuste extra para telas muito pequenas (<480px) --- */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .card h4 {
+    font-size: 0.95rem;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+
 
 
 
