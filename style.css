@@ -670,33 +670,37 @@ section[aria-label="Galeria da torcida"] .galeria figcaption {
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
+  z-index: 1101;
 }
 
-/* MOBILE */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   #menuToggle {
     display: block;
     position: absolute;
     right: 15px;
-    top: 25px;
-    z-index: 1100;
+    top: 20px;
   }
 
   header nav ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
-    background: #111;
+    background: rgba(0, 0, 0, 0.95);
     padding: 20px 0;
     text-align: center;
-    z-index: 1000;
+    transform: translateY(-200%);
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+    z-index: 1100;
   }
 
   header nav ul.ativo {
-    display: flex;
+    transform: translateY(0);
+    opacity: 1;
   }
 
   header nav ul li {
@@ -706,8 +710,10 @@ section[aria-label="Galeria da torcida"] .galeria figcaption {
   header nav ul li a {
     display: block;
     padding: 10px;
+    color: white;
   }
 }
+
 
 
 

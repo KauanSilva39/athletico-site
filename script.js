@@ -302,11 +302,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (btnMenu && menu) {
     btnMenu.addEventListener("click", () => {
-      menu.classList.toggle("ativo");
-      // alterna o ícone ☰ ↔ ❌
-      btnMenu.textContent = menu.classList.contains("ativo") ? "❌" : "☰";
+      const aberto = menu.classList.toggle("ativo");
+      btnMenu.textContent = aberto ? "❌" : "☰";
+      btnMenu.setAttribute("aria-expanded", aberto);
     });
   }
 });
+
 
 });
