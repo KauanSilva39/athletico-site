@@ -662,7 +662,7 @@ section[aria-label="Galeria da torcida"] .galeria figcaption {
   }
 }
 
-/* ===== Menu hambúrguer ===== */
+/* ===== MENU HAMBURGUER ===== */
 #menuToggle {
   display: none;
   background: none;
@@ -672,16 +672,24 @@ section[aria-label="Galeria da torcida"] .galeria figcaption {
   cursor: pointer;
 }
 
-/* Estilos no modo mobile */
+/* MOBILE */
 @media (max-width: 768px) {
+  #menuToggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    z-index: 1100;
+  }
+
   header nav ul {
     display: none;
     flex-direction: column;
-    background-color: #111;
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
+    background: #111;
     padding: 20px 0;
     text-align: center;
     z-index: 1000;
@@ -695,10 +703,12 @@ section[aria-label="Galeria da torcida"] .galeria figcaption {
     margin: 10px 0;
   }
 
-  #menuToggle {
+  header nav ul li a {
     display: block;
+    padding: 10px;
   }
 }
+
 
 
 

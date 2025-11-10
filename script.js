@@ -295,18 +295,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.2 });
   noticias.forEach(n => obs.observe(n));
 
-// ===== MENU HAMBÚRGUER RESPONSIVO =====
+// ===== MENU HAMBURGUER FUNCIONAL =====
 document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menuToggle");
-  const navMenu = document.querySelector("header nav ul");
+  const btnMenu = document.getElementById("menuToggle");
+  const menu = document.getElementById("menuLista");
 
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("ativo");
+  if (btnMenu && menu) {
+    btnMenu.addEventListener("click", () => {
+      menu.classList.toggle("ativo");
+      // alterna o ícone ☰ ↔ ❌
+      btnMenu.textContent = menu.classList.contains("ativo") ? "❌" : "☰";
     });
   }
 });
-
-
 
 });
