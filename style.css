@@ -714,6 +714,83 @@ section[aria-label="Galeria da torcida"] .galeria figcaption {
   }
 }
 
+/* ====== GRID DO ELENCO ====== */
+.grid-elenco {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+  padding: 20px;
+}
+
+/* ====== CARD DO JOGADOR ====== */
+.jogador-card {
+  background: rgba(17, 17, 17, 0.95);
+  color: #fff;
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  max-width: 250px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.jogador-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.jogador-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.jogador-card:hover img {
+  transform: scale(1.08);
+}
+
+.jogador-card h3 {
+  margin-bottom: 5px;
+  color: #ff3333;
+  font-size: 1.2rem;
+}
+
+.jogador-card p {
+  margin: 3px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* ====== BANDEIRAS NAS NACIONALIDADES ====== */
+p img.bandeira {
+  width: 20px;         /* tamanho pequeno */
+  height: 20px;        /* quadradinha */
+  object-fit: cover;   /* mantém proporção correta */
+  margin-left: 6px;    /* espaçamento do texto */
+  vertical-align: middle; /* alinha com o texto */
+  border-radius: 3px;  /* cantos levemente arredondados */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 900px) {
+  .grid-elenco {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-elenco {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 

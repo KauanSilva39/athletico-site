@@ -143,7 +143,18 @@ document.addEventListener("DOMContentLoaded", () => {
       "O Furacão foi o primeiro time do Paraná a conquistar o Campeonato Brasileiro (2001).",
       "A Arena da Baixada foi o primeiro estádio do país a ter teto retrátil.",
       "O Athletico tem uma das categorias de base mais premiadas do Brasil.",
-      "O clube foi pioneiro em adotar identidade visual moderna e nome sem o 'h' tradicional."
+      "O clube foi pioneiro em adotar identidade visual moderna e nome sem o 'h' tradicional.",
+      "O estádio foi reconstruído quatro vezes desde sua inauguração em 1914, sendo uma das arenas mais modernas do país.",
+      "A torcida organizada Os Fanáticos foi fundada em 1977 e é uma das mais antigas do Sul do Brasil.",
+      "O apelido “Furacão” surgiu em 1949, quando o Athletico teve uma sequência impressionante de vitórias.",
+      "O clube foi bicampeão da Copa Sul-Americana (2018 e 2021), sendo o único brasileiro, e um dos únicos na América a conseguir isso.",
+      "O Athletico já jogou quatro finais continentais (Libertadores 2005 e 2022, Sul-Americana 2018 e 2021), algo inédito entre os times do Sul.",
+      "O clube nasceu em 1924, da fusão entre o Internacional de Curitiba e o América Futebol Clube.",
+      "A mudança de nome para “Athletico” (com “th”) foi uma forma de resgatar a grafia original usada em 1924.",
+      "O Athletico foi pioneiro na gestão empresarial do futebol, inspirando outros clubes a adotarem modelos mais profissionais.",
+      "Foi um dos primeiros clubes do país a adotar programas de sócio-torcedor digitalizados e com sistema de pontos.",
+      "O clube é reconhecido pela FIFA como referência em sustentabilidade, com tratamento de água da chuva e energia solar na Arena."
+
     ];
     const btn = document.getElementById("btnCuriosidade");
     const titulo = document.getElementById("curiosidadeTitulo");
