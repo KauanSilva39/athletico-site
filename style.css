@@ -127,6 +127,201 @@ h1, h2, h3, h4 {
   to { text-shadow: 0 0 15px #ff6666, 0 0 30px #ff0000; }
 }
 
+/* === HOME - NOVAS SEÇÕES (tema rubro-negro) === */
+
+.hero-banner {
+  text-align: center;
+  background: linear-gradient(135deg, #7a0000, #1a0000);
+  color: #f5f5f5;
+  padding: 50px 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.hero-banner h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero-banner p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+/* ===== Seções internas ===== */
+.ultimo-jogo, .proximo-jogo, .video-destaque, .jogador-destaque, .redes-sociais {
+  background: #111;
+  color: #f0f0f0;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 1px solid #aa0000;
+}
+
+.ultimo-jogo h2, .proximo-jogo h2, .video-destaque h2, .jogador-destaque h2, .redes-sociais h2 {
+  color: #ff2b2b;
+  margin-bottom: 15px;
+}
+
+/* ===== Último jogo / Placar ===== */
+.placar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 15px 0;
+}
+
+.placar img {
+  width: 60px;
+  height: 60px;
+}
+
+.resultado {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff3333;
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.7);
+}
+
+.btn {
+  display: inline-block;
+  background: #a00000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #ff3333;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+/* ===== Vídeo destaque ===== */
+.video-destaque iframe {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+}
+
+/* ===== Jogador destaque ===== */
+.jogador-destaque article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.jogador-destaque img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff3333;
+}
+
+.jogador-destaque h3 {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.jogador-destaque p {
+  color: #ccc;
+  margin: 5px 0;
+}
+
+/* ===== Redes sociais ===== */
+.redes-sociais .links-redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+  color: #ff3333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #ff3333;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .hero-banner h2 {
+    font-size: 1.4rem;
+  }
+  .jogador-destaque article {
+    flex-direction: column;
+  }
+  .placar img {
+    width: 50px;
+    height: 50px;
+  }
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== BLOCO: PRÓXIMO JOGO ===== */
+.proximo-jogo {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  max-width: 700px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.proximo-jogo h2 {
+  color: #d40000;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.proximo-jogo p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+/* Ajuste das imagens */
+.proximo-jogo img {
+  display: block;
+  margin: 15px auto;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito leve ao passar o mouse */
+.proximo-jogo img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+ 
+
 /* ===== BOTÕES ===== */
 button {
   background: linear-gradient(90deg, #a00, #ff3333);
@@ -788,6 +983,97 @@ p img.bandeira {
   .grid-elenco {
     grid-template-columns: 1fr;
   }
+}
+
+/* ===== AJUSTES MODO CLARO ===== */
+body.modo-claro {
+  background: linear-gradient(180deg, #f7f7f7 0%, #fff 100%);
+  color: #111;
+}
+
+body.modo-claro header {
+  background-color: #b30000;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+body.modo-claro nav ul li a {
+  color: #fff;
+}
+
+body.modo-claro main {
+  background-color: #fff;
+  color: #111;
+}
+
+body.modo-claro footer {
+  background-color: #b30000;
+  color: #fff;
+}
+
+/* ==== Ajuste para o bloco "Próximo Jogo" ==== */
+body.modo-claro .proximo-jogo {
+  background-color: #f2f2f2;
+  color: #111;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+body.modo-claro .proximo-jogo h2 {
+  color: #c40000;
+}
+
+/* Imagens no modo claro — leve ajuste de contraste */
+body.modo-claro .proximo-jogo img {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== AJUSTES MODO CLARO - SEÇÕES ESPECÍFICAS ===== */
+
+/* 🏟️ Último Jogo */
+body.modo-claro .ultimo-jogo {
+  background-color: #f2f2f2;
+  color: #111;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+body.modo-claro .ultimo-jogo h2 {
+  color: #b30000;
+}
+
+/* 🎥 Vídeo Destaque */
+body.modo-claro .video-destaque {
+  background-color: #fafafa;
+  color: #111;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+body.modo-claro .video-destaque h2 {
+  color: #b30000;
+}
+
+body.modo-claro .video-destaque iframe,
+body.modo-claro .video-destaque video {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  border-radius: 10px;
+}
+
+/* ⭐ Jogador Destaque */
+body.modo-claro .jogador-destaque {
+  background-color: #f2f2f2;
+  color: #111;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+body.modo-claro .jogador-destaque h2 {
+  color: #b30000;
+}
+
+body.modo-claro .jogador-destaque img {
+  border: 2px solid #b30000;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 
