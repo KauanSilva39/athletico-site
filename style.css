@@ -1076,6 +1076,218 @@ body.modo-claro .jogador-destaque img {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* ===== Ajustes página "Próxima Partida" ===== */
+
+/* imagens centralizadas e visíveis (tamanho conservador) */
+.imagens-partida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+.imagens-partida figure {
+  margin: 0;
+  text-align: center;
+  max-width: 580px;
+  width: 95%;
+}
+.img-centro {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* ===== Escalação com campo rubro-negro profissional ===== */
+.escaleacao {
+  position: relative;
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #1a0000 0%, #a00000 100%);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ===== Linhas brancas do campo ===== */
+.escaleacao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    /* bordas externas */
+    linear-gradient(0deg, transparent 48%, rgba(255, 255, 255, 0.4) 49%, rgba(255, 255, 255, 0.4) 51%, transparent 52%) center center / 100% 100% no-repeat,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.4) 1px, transparent 1px) left center / 98% 100% no-repeat,
+    /* linha do meio campo */
+    linear-gradient(0deg, rgba(255, 255, 255, 0.4) 1px, transparent 1px) center center / 100% 1px no-repeat,
+    /* círculo central */
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.35) 2px, transparent 3px);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* ===== Escalação com campo rubro-negro ===== */
+.escaleacao {
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 18px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #1a0000 0%, #b30000 100%);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Linhas brancas do "campo" */
+.escaleacao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255,255,255,0.12) 0%, transparent 60%),
+    repeating-linear-gradient(to bottom, transparent 0, transparent 70px, rgba(255,255,255,0.1) 71px, transparent 72px);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* Formação geral */
+.formacao {
+  display: grid;
+  gap: 28px;
+  justify-items: center;
+  margin: 24px auto;
+}
+
+/* Linhas de jogadores */
+.linha {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cada jogador */
+.pos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95px;
+  z-index: 1;
+}
+
+.pos img {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2.5px solid #fff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pos img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 15px rgba(255,255,255,0.6), 0 0 12px rgba(255,0,0,0.6);
+}
+
+.pos figcaption {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Lista lateral */
+.lista-escalaacao {
+  text-align: left;
+  margin-top: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.lista-escalaacao li { margin: 6px 0; }
+.escaleacao .nota {
+  color: #ddd;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .pos img {
+    width: 60px;
+    height: 60px;
+  }
+  .pos figcaption {
+    font-size: 0.8rem;
+  }
+  .linha {
+    gap: 20px;
+  }
+}
+
+/* ===== CENÁRIO DE ACESSO ===== */
+.cenario-acesso {
+  background: linear-gradient(180deg, #210000 0%, #5b0000 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 14px;
+  margin: 40px auto;
+  max-width: 900px;
+  color: #fff;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+}
+
+.cenario-acesso h2 {
+  text-align: center;
+  color: #ff4444;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.cenario-acesso h3 {
+  margin-top: 20px;
+  color: #ff7777;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.cenario-acesso ul,
+.cenario-acesso ol {
+  margin: 10px 0 15px 25px;
+  line-height: 1.7;
+}
+
+.cenario-acesso li {
+  margin-bottom: 8px;
+}
+
+.cenario-acesso .nota {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #ddd;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border-left: 4px solid #ff3333;
+}
+
+
+
+
+
 
 
 
