@@ -1284,6 +1284,64 @@ body.modo-claro .jogador-destaque img {
   border-left: 4px solid #ff3333;
 }
 
+/* ====== SEÇÃO DE TREINOS ====== */
+.treinos-pre-jogo {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.treinos-pre-jogo h2 {
+  color: var(--vermelho-athletico, #c00);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.treinos-pre-jogo p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--texto-principal, #eaeaea);
+  margin-bottom: 20px;
+}
+
+.galeria-treinos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.foto-treino {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-treino:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.5);
+}
+
+.galeria-treinos figcaption {
+  font-size: 0.95rem;
+  color: var(--texto-secundario, #ccc);
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* Modo Claro */
+body.modo-claro .treinos-pre-jogo p {
+  color: #222;
+}
+body.modo-claro .galeria-treinos figcaption {
+  color: #555;
+}
+
+
 
 
 
