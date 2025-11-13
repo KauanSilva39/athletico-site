@@ -5,14 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Athletico — Portal</title>
-
-  <!-- Fonte oficial Rajdhani -->
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS externo -->
   <link rel="stylesheet" href="style.css">
-
-  
   <style>
     
     .hero {
@@ -30,7 +24,6 @@
     }
   </style>
 </head>
-
 <body>
   <header>
     <h1>
@@ -38,11 +31,7 @@
         style="width:44px;height:44px;vertical-align:middle;margin-right:10px;">
       Club Athletico Paranaense
     </h1>
-
     <button id="menuToggle" aria-label="Abrir menu">☰</button>
-
-
-
     <nav aria-label="Menu principal">
       <ul>
         <li><a href="index.html">Início</a></li>
@@ -54,7 +43,6 @@
         <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
     </nav>
-
     <button id="toggleTema" aria-pressed="false" style="margin-top:10px;">Modo Claro</button>
   </header>
 
@@ -67,13 +55,15 @@
       </p>
     </section>
 
-    <!-- 🏟️ HERO / APRESENTAÇÃO -->
+    <section class="banner-furacao" aria-label="Banner Athletico Paranaense">
+  <img src="./imagens/Estadio2024.jpg" alt="Torcida do Athletico Paranaense fazendo festa na Arena da Baixada">
+</section>
+    
 <section class="hero-banner">
   <h2>“Aqui é Furacão! A Camisa que só se veste por amor!”</h2>
   <p>Notícias, elenco, curiosidades e tudo sobre o Athletico Paranaense em um só lugar.</p>
 </section>
 
-<!-- ⚽ ÚLTIMO JOGO -->
 <section class="ultimo-jogo">
   <h2>Último Jogo</h2>
   <div class="placar">
@@ -91,7 +81,6 @@
   <a href="jogo-vitoria-athletico.html" class="btn">Ver como foi o jogo</a>
 </section>
 
-<!-- 🗓️ PRÓXIMO JOGO -->
 <section class="proximo-jogo">
   <h2>Próximo Jogo</h2>
   <p><strong>Ferroviária x Athletico</strong></p>
@@ -99,10 +88,9 @@
   <img src="./imagens/ferroviaria.jpg" alt="Próximo jogo do Furacão"> 
   <p>Estádio Fonte Luminosa (Araraquara-SP)</p>
   <img src="./imagens/fonte luminosa.jpg" alt="Estadio Fonte Luminosa"> 
-  <a href="proxima-partida.html" class="btn">Veja o serviço de jogo!</a>
+  <a href="prejogo-ferroviaria.html" class="btn">Veja o serviço de jogo!</a>
 </section>
 
-<!-- 🎥 VÍDEO DESTAQUE -->
 <section class="video-destaque">
   <h2>Assista: Bastidores da Última Vitória</h2>
   <div class="video-container">
@@ -110,7 +98,6 @@
   </div>
 </section>
 
-<!-- ⭐ JOGADOR EM DESTAQUE -->
 <section class="jogador-destaque">
   <h2>Jogador em Destaque</h2>
   <article>
@@ -124,13 +111,11 @@
   </article>
 </section>
 
-    <!-- CARROSSEL (Função DOM 1) -->
     <section aria-label="Carrossel de imagens" class="carousel-section">
       <h3>Galeria / Destaques</h3>
       <div class="carousel" id="carousel" aria-live="polite">
         <button id="prevBtn" aria-label="Anterior" class="carousel-control">◀</button>
         <div class="carousel-track" id="carouselTrack" style="display:inline-block; width:80%;">
-          
           <img src="./imagens/bruno.webp" alt="Athletico destaque 1">
           <img src="./imagens/DerikJogo-1600-scaled.jpg" alt="Athletico destaque 2" style="display:none;">
           <img src="./imagens/download.jpg" alt="Athletico destaque 3" style="display:none;">
@@ -147,7 +132,6 @@
 
     <section aria-label="Resumo e links importantes" id="conteudo-visual">
       <h3>Explore o Conteúdo</h3>
-
       <div class="cards-container">
         <a href="noticias.html" class="card-link">
           <article class="card">
@@ -155,35 +139,30 @@
             <h4>Notícias do Furacão - Fique por dentro do dia a dia Rubro Negro</h4>
           </article>
         </a>
-
         <a href="elenco.html" class="card-link">
           <article class="card">
             <img src="./imagens/nova camisa2.jpg" alt="Elenco do Athletico">
             <h4>Elenco Atual - quem joga atualmente pelo Rubro Negro</h4>
           </article>
         </a>
-
         <a href="torcida.html" class="card-link">
           <article class="card">
             <img src="./imagens/torcida.jpg" alt="Torcida">
             <h4>Torcida — músicas e vídeos</h4>
           </article>
         </a>
-
         <a href="curiosidades.html" class="card-link">
           <article class="card">
             <img src="./imagens/EscudoCAP-1600.jpg" alt="curiosidades">
             <h4>Curiosidades — informações e destaques</h4>
           </article>
         </a>
-
         <a href="titulos.html" class="card-link">
           <article class="card">
             <img src="./imagens/tacas.jpg" alt="Títulos">
             <h4>Títulos — Veja as glórias do Furacão</h4>
           </article>
         </a>
-
         <a href="cadastro.html" class="card-link">
           <article class="card">
             <img src="./imagens/rony.webp" alt="Cadastro de Torcedor">
@@ -192,11 +171,9 @@
         </a>
       </div>
     </section>
-
   </main>
 
   <footer>
-    <!-- 🔗 REDES SOCIAIS -->
 <section class="redes-sociais">
   <h2>Siga o Furacão</h2>
   <div class="links-redes">
@@ -208,9 +185,7 @@
     <p>&copy; 2025 — Club Athletico Paranaense</p>
     <button id="btnTopo" title="Voltar ao topo">↑</button>
   </footer>
-
   <script src="script.js"></script>
 </body>
-
 </html>
 

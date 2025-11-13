@@ -94,6 +94,37 @@ body.modo-claro nav a { color: #000; }
 body.modo-claro nav a::after { background: #b00; }
 body.modo-claro #toggleTema { background-color: #d00; }
 
+/* ===== BANNER CENTRAL ENTRE SEÇÕES ===== */
+.banner-furacao {
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.banner-furacao img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Efeito leve ao passar o mouse (desktop) */
+.banner-furacao img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(208, 0, 0, 0.5);
+}
+
+/* Responsividade no celular */
+@media (max-width: 768px) {
+  .banner-furacao img {
+    max-height: 250px;
+    border-radius: 8px;
+  }
+}
+
+
 /* ===== MAIN ===== */
 main {
   max-width: 920px;
