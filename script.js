@@ -1,4 +1,3 @@
-/* script.js — Versão final otimizada e corrigida */
 document.addEventListener("DOMContentLoaded", () => {
   /* ======= MODO CLARO/ESCURO ======= */
   const btnTema = document.getElementById("toggleTema") || document.getElementById("toggleTemaElenco");
