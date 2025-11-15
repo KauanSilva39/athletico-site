@@ -1647,6 +1647,363 @@ body.modo-claro .galeria-treinos figcaption {
   }
 }
 
+/* ============================================
+   📱 MOBILE UPGRADE — não altera o desktop!
+   ============================================ */
+
+/* ----- Reorganização geral ----- */
+@media (max-width: 768px) {
+
+  /* --- Header simplificado e organizado --- */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 18px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  /* Esconde o menu horizontal */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 70%;
+    background: #111;
+    padding: 20px 15px;
+    border-left: 2px solid #aa0000;
+    border-bottom: 2px solid #aa0000;
+    z-index: 9999;
+  }
+
+  nav ul.ativo {
+    display: flex;
+  }
+
+  /* Botão hambúrguer */
+  #menuToggle {
+    display: block;
+    font-size: 2rem;
+    color: white;
+  }
+
+  nav ul li a {
+    padding: 12px;
+    font-size: 1.1rem;
+    display: block;
+  }
+
+  /* --- Ajustes gerais de layout --- */
+  main {
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  section {
+    padding: 18px;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  /* --- Cards do elenco --- */
+  .grid-elenco {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .jogador-card {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .jogador-card img {
+    height: 180px !important;
+  }
+
+  /* --- Notícias --- */
+  .noticia-card img {
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  .noticia-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .noticia-card p {
+    font-size: 0.95rem;
+  }
+
+  /* --- Galeria --- */
+  .galeria img {
+    max-width: 95%;
+  }
+
+  /* --- Tabelas --- */
+  table {
+    font-size: 0.85rem;
+  }
+
+  /* --- Botões --- */
+  .btn,
+  button {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* --- Campo 3-5-2 responsivo --- */
+  #campo352 {
+    padding: 20px 5px;
+    border-radius: 18px;
+  }
+
+  #campo352 .linha {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  #campo352 .slot,
+  #goleiroSlot {
+    min-width: 95px;
+    min-height: 95px;
+  }
+
+  .slotFoto {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .slotNome {
+    font-size: 0.85rem;
+  }
+
+  #listaJogadores352 {
+    justify-content: center;
+  }
+
+  .jCard {
+    width: 160px;
+  }
+}
+
+/* ----- Ajuste extra para telas muito pequenas ----- */
+@media (max-width: 480px) {
+
+  header h1 {
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .grid-elenco {
+    grid-template-columns: 1fr;
+  }
+
+  .jogador-card img {
+    height: 160px !important;
+  }
+
+  .noticia-card img {
+    max-height: 220px;
+  }
+
+  #campo352 .slot,
+  #goleiroSlot {
+    min-width: 85px;
+    min-height: 85px;
+  }
+
+  .slotFoto {
+    width: 55px !important;
+    height: 55px !important;
+  }
+}
+
+/* ============================
+   🔥 Otimização Último Jogo
+   ============================ */
+
+/* --- Desktop: leve upgrade visual --- */
+.ultimo-jogo .placar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 10px 0;
+}
+
+.ultimo-jogo .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.ultimo-jogo .time img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.ultimo-jogo .time span {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.ultimo-jogo .resultado {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #ff3333;
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.7);
+  letter-spacing: 2px;
+}
+
+
+/* ------------------------------
+   📱 MOBILE — otimização forte
+   ------------------------------ */
+@media (max-width: 768px) {
+
+  .ultimo-jogo {
+    padding: 18px;
+  }
+
+  .ultimo-jogo .placar {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .ultimo-jogo .time img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .ultimo-jogo .resultado {
+    font-size: 2.2rem;
+    margin: 6px 0;
+  }
+
+  .ultimo-jogo .time span {
+    font-size: 1rem;
+  }
+
+  .ultimo-jogo p {
+    font-size: 0.95rem;
+    margin-top: 10px;
+  }
+
+  .ultimo-jogo .btn {
+    margin-top: 12px;
+    width: 90%;
+    max-width: 260px;
+  }
+}
+
+/* Ajuste extra para telas muito pequenas */
+@media (max-width: 480px) {
+
+  .ultimo-jogo .placar {
+    gap: 15px;
+  }
+
+  .ultimo-jogo .resultado {
+    font-size: 1.9rem;
+  }
+
+  .ultimo-jogo .time img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ultimo-jogo .time span {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== Correção das bandeiras ===== */
+.jogador-card p img.bandeira {
+  width: 22px;
+  height: auto;              /* mantém proporção natural */
+  object-fit: contain;       /* NUNCA distorce */
+  margin-left: 6px;
+  vertical-align: middle;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+/* ===== Ajuste de espaçamento no card do jogador ===== */
+.jogador-card p {
+  margin: 2px 0;
+  line-height: 1.2;     /* texto mais compacto */
+}
+
+.jogador-card h3 {
+  margin-bottom: 4px;   /* reduz espaço abaixo do nome */
+}
+
+.jogador-card img {
+  margin-bottom: 6px;   /* aproxima o nome da foto */
+}
+
+/* ===== Correção REAL dos botões no mobile ===== */
+@media (max-width: 768px) {
+
+  /* Ajuste no header: deixar espaço para os botões */
+  header {
+    position: relative;
+    padding-top: 60px; /* libera área acima para os botões */
+  }
+
+  /* Contêiner para os botões no mobile */
+  .mobile-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 2000;
+  }
+
+  /* Ajuste no botão de menu */
+  #menuToggle {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Botão de modo claro reduzido */
+  #toggleTema {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Menu abrindo mais abaixo, para não colidir */
+  nav ul#menuLista {
+    top: 70px !important;
+  }
+}
+
+
 
 
 
