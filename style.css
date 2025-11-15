@@ -1372,6 +1372,232 @@ body.modo-claro .galeria-treinos figcaption {
   color: #555;
 }
 
+/* Animação suave ao entrar na página */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeMove 0.8s ease-out forwards;
+}
+
+@keyframes fadeMove {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.jogador-card {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.jogador-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff000055;
+}
+
+#campo352 {
+  background: #0a0a0a;               /* Fundo preto elegante */
+  background-image:
+    radial-gradient(circle at 50% 50%, #111 0%, #000 70%), /* profundidade */
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,0,0,0.25) 0px,
+      rgba(255,0,0,0.25) 4px,
+      transparent 4px,
+      transparent 20px
+    );                              /* linhas horizontais */
+  
+  border: 3px solid #aa0000;        /* borda Athletico */
+  box-shadow: 0 0 20px #ff000055;   /* glow leve */
+  border-radius: 25px;
+
+  padding: 35px;
+  margin-bottom: 30px;
+
+  background-size: cover;
+  position: relative;
+}
+
+/* Linhas do campo (vertical + círculos) */
+#campo352::before,
+#campo352::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.12); /* linhas discretas */
+  pointer-events: none; /* 🔥 IMPORTANTE PARA NÃO BLOQUEAR O DROP */
+}
+
+
+/* Linha de meio-campo */
+#campo352::before {
+  top: 0;
+  width: 3px;
+  height: 100%;
+}
+
+/* Círculo central */
+#campo352::after {
+  top: 50%;
+  width: 140px;
+  height: 140px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.15);
+}
+
+/* Caixas de posicionamento */
+#campo352 .slot,
+#goleiroSlot {
+  backdrop-filter: brightness(1.2);
+  background: rgba(255, 0, 0, 0.25);
+  border: 2px dashed #cc0000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: .2s;
+}
+
+#campo352 .slot:hover,
+#goleiroSlot:hover {
+  background: rgba(255, 0, 0, 0.4);
+  border-color: #ff4444;
+}
+
+/* Foto nos slots */
+.slotFoto {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff0000aa;
+  margin-bottom: 5px;
+}
+
+.slotNome {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+
+
+#campo352 .linha {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.slot {
+  width: 120px;
+  height: 120px;
+  background: #00000066;
+  border: 2px dashed #fff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#listaJogadores352 .jCard {
+  background: #111;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 180px;
+  cursor: grab;
+  border: 1px solid #333;
+}
+
+#listaJogadores352 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.posicao.ocupado {
+  background: #d00;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #fff;
+}
+
+/* ---- Lista de jogadores ---- */
+#listaJogadores352 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.jCard {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #111;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  cursor: grab;
+  width: 190px;
+  transition: 0.2s;
+}
+
+.jCard:hover {
+  transform: scale(1.03);
+  border-color: #ee0000;
+}
+
+.jCard img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ---- Slots ---- */
+.slot, #goleiroSlot {
+  background: #222;
+  border: 2px dashed #666;
+  min-height: 90px;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 10px;
+  color: #eee;
+  transition: 0.3s;
+}
+
+.slotFoto {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-bottom: 4px;
+}
+
+.slot img.slotFoto {
+  width: 80px;
+  height: 80px;
+}
+
+#goleiroSlot img.slotFoto {
+  width: 90px;
+  height: 90px;
+}
+
+.slotNome {
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+}
+
 
 
 

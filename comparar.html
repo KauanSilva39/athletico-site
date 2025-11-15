@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparar Jogadores • Athletico Paranaense</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Comparar Jogadores</h1>
+  <button id="toggleTema" aria-pressed="false" style="margin-top:10px;">Modo Claro</button>
+  <a href="elenco.html" class="btn">⬅ Voltar</a>
+</header>
+
+<main style="padding:20px;">
+  <h2>Selecione dois jogadores:</h2>
+
+  <div style="display:flex; gap:20px; margin-top:20px;">
+    <select id="selectA" class="selectJogador"></select>
+    <select id="selectB" class="selectJogador"></select>
+    <button id="btnComparar" class="btn">Comparar</button>
+  </div>
+
+  <section id="resultadoComparacao" style="margin-top:30px;"></section>
+</main>
+<footer>
+<section class="redes-sociais">
+  <h2>Siga o Furacão</h2>
+  <div class="links-redes">
+    <a href="https://www.instagram.com/athleticoparanaense" target="_blank">📸 Instagram</a>
+    <a href="https://x.com/AthleticoPR" target="_blank">🐦 Twitter</a>
+    <a href="https://www.youtube.com/@athleticoparanaense" target="_blank">▶️ YouTube</a>
+  </div>
+</section>
+    <p>&copy; 2025 — Club Athletico Paranaense</p>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogador — Athletico Paranaense</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1><img src="./imagens/Athletico_Paranaense_(Logo_2019).svg" class="logo" alt="Escudo"> Perfil do Jogador</h1>
+
+    <button id="menuToggle" aria-label="Abrir menu">☰</button>
+
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="elenco.html">Elenco</a></li>
+        <li><a href="torcida.html">Torcida</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+        <li><a href="titulos.html">Títulos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+
+    <button id="toggleTema" style="margin-top:10px;">Modo Claro</button>
+  </header>
+
+  <main>
+    <section id="perfilJogador" class="fade-in" aria-label="Perfil do jogador">
+      <h2 id="nomeJogador">Carregando...</h2>
+
+      <img id="fotoJogador" src="" alt="Foto do jogador" style="width:250px;border-radius:15px;margin:20px 0;">
+
+      <p><strong>Número:</strong> <span id="numeroJogador"></span></p>
+      <p><strong>Posição:</strong> <span id="posicaoJogador"></span></p>
+      <p><strong>Nacionalidade:</strong> <span id="nacionalidadeJogador"></span></p>
+
+
+
+      <h3>📊 Estatísticas 2025</h3>
+      <ul>
+        <li>Jogos: <span id="jogosJogador"></span></li>
+        <li>Gols: <span id="golsJogador"></span></li>
+        <li>Assistências: <span id="assistJogador"></span></li>
+      </ul>
+
+      <div id="estatisticasExtras"></div>
+
+
+        <button id="btnFicha" class="btn" style="margin-top:20px;">📄 Ver ficha técnica completa</button>
+
+<div id="fichaTecnica" class="ficha-fechada" style="
+  background:#111;
+  padding:15px;
+  margin-top:15px;
+  border-radius:10px;
+  overflow:hidden;
+  max-height:0;
+  transition:max-height 0.4s ease;
+">
+  <h3>📘 Ficha Técnica</h3>
+  <p><strong>Altura:</strong> <span id="alturaJogador"></span></p>
+  <p><strong>Peso:</strong> <span id="pesoJogador"></span></p>
+  <p><strong>Idade:</strong> <span id="idadeJogador"></span></p>
+  <p><strong>Pé dominante:</strong> <span id="peJogador"></span></p>
+  <p><strong>Clube anterior:</strong> <span id="clubeJogador"></span></p>
+</div>
+
+
+
+      <p id="bioJogador" style="margin-top:20px;font-size:1.1em;opacity:.85;"></p>
+
+      <a href="elenco.html" class="btn" style="margin-top:25px;display:inline-block;">⬅ Voltar ao Elenco</a>
+      <div id="navegacaoJogadores" style="margin-top:30px; display:flex; gap:15px;">
+         <button id="btnAnterior" class="btn">⬅ Jogador Anterior</button>
+        <button id="btnProximo" class="btn">Próximo Jogador ➡</button>
+        </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <section class="redes-sociais">
+      <h2>Siga o Furacão</h2>
+      <div class="links-redes">
+        <a href="https://www.instagram.com/athleticoparanaense" target="_blank">📸 Instagram</a>
+        <a href="https://x.com/AthleticoPR" target="_blank">🐦 Twitter</a>
+        <a href="https://www.youtube.com/@athleticoparanaense" target="_blank">▶️ YouTube</a>
+      </div>
+    </section>
+    <p>&copy; 2025 — Club Athletico Paranaense</p>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
