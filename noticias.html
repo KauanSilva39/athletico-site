@@ -28,9 +28,47 @@
     <button id="toggleTema">Modo Claro</button>
   </header>
   <main>
+
     <section class="noticias" aria-label="Últimas notícias do Athletico">
       <h2>Últimas Notícias do Furacão</h2>
       <p id="atualizacao"></p>
+
+      <div class="noticia-card">
+  <h3>Athletico vira sobre a Ferroviária nos acréscimos e fica muito perto do acesso!</h3>
+  <img src="./imagens/comemoracao_ferroviaria.jpg" 
+       alt="Athletico comemora virada contra a Ferroviária">
+  <p class="resumo">
+    O Furacão venceu a Ferroviária por 2x1 fora de casa, com um gol aos 49 minutos do segundo tempo! 
+    Veja como foi a partida, os gols da virada e os bastidores dessa noite histórica em Araraquara.
+  </p>
+  <button class="btn-detalhes" data-target="detalhe-ferroviaria">
+    Ver detalhes
+  </button>
+  <button class="btn-ir-jogo" 
+          onclick="window.location.href='vitoria-cap-ferroviaria.html'">
+    Ver página da partida
+  </button>
+  <div id="detalhe-ferroviaria" class="noticia-detalhe">
+    <p>
+      A Ferroviária saiu na frente ainda no primeiro tempo, aproveitando de uma falha do goleiro rubro negro para abrir o placar. 
+      Mas o Athletico não se abalou e voltou com tudo para o segundo tempo.
+    </p>
+    <p>
+      O empate veio com um golaço de falta de <strong>João Cruz</strong>, que mandou direto pro gol e deixou a torcida 
+      rubro-negra em êxtase na Fonte Luminosa.
+    </p>
+    <p>
+      Nos acréscimos, aos 49 minutos, veio o momento histórico: 
+      <strong>Renan Peixoto</strong> subiu mais alto que a defesa após cruzamento preciso de Leozinho e marcou o gol da virada.
+    </p>
+    <p>
+      A vitória coloca o Athletico ainda mais próximo do retorno à Série A e reforça o ótimo momento da equipe comandada por 
+      <strong>Odair Hellmann</strong>.
+    </p>
+  </div>
+</div>
+
+
       <div class="noticia-card">
         <h3>Torcida do Athletico promete "invadir" Araraquara em jogo que pode valer acesso na Série B</h3>
         <img src="./imagens/torcidanov25-1600-scaled.avif" alt="Torcida do Athletico"
@@ -52,6 +90,7 @@
           </p>
         </div>
       </div>
+
       <div class="noticia-card">
         <h3>Athletico é absolvido no STJD por invasão de campo e segue com torcida na reta final da Série B</h3>
         <img src="./imagens/DroneArenaAGO25-1600-2-scaled-1.jpg" alt="Arena da Baixada vista de cima"
@@ -70,6 +109,7 @@
           </p>
         </div>
       </div>
+
       <div class="noticia-card">
         <h3>Athletico vence o Volta Redonda por 2x0 e segue embalado para o acesso a Série A!</h3>
     <img src="./imagens/JulimarCAPxVRFC.jpg" alt="Athletico comemora gol na Arena da Baixada">
@@ -92,7 +132,8 @@
       pelo acesso.
     </p>
   </div>
-</div>
+      </div>
+
       <div class="noticia-card">
         <h3>Odair Hellmann ganha força e deve seguir no comando do Athletico em 2026</h3>
         <img src="./imagens/OdairCRBxCAP-1200-2-scaled-1.jpg" alt="Odair Hellmann na beira do gramado">
