@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Athletico 1x0 América-MG — O jogo do Acesso!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>
+    <img src="./imagens/logocapsofa.png" alt="Escudo do Athletico" class="logo">
+    O Furacão Voltou!
+  </h1>
+
+  <button id="menuToggle" aria-label="Abrir menu">☰</button>
+
+  <nav aria-label="Menu principal">
+     <ul id="menuLista">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="noticias.html">Notícias</a></li>
+      <li><a href="elenco.html">Elenco</a></li>
+      <li><a href="torcida.html">Torcida</a></li>
+      <li><a href="curiosidades.html">Curiosidades</a></li>
+      <li><a href="titulos.html">Títulos</a></li>
+      <li><a href="cadastro.html">Cadastro</a></li>
+    </ul>
+  </nav>
+
+  <button id="toggleTema" aria-pressed="false">Modo Claro</button>
+</header>
+
+<main>
+
+  <section aria-labelledby="torcida-title">
+    <h2 id="torcida-title">O Furacão está de volta a elite do futebol brasileiro!</h2>
+
+    <p>
+      A torcida do Athletico pode respirar aliviada! Milhares de rubro-negros 
+      foram até a Arena da Baixada para apoiar o time no último duelo pela 
+      Série B. O clima no Caldeirão foi de final — e a torcida foi 
+      recompensada com o retorno a Série A.
+    </p>
+
+    <div class="galeria" style="margin-top:20px;">
+      <figure>
+        <img src="./imagens/CAPxAMG-3.jpg" 
+             alt="Festa da torcida antes da bola rolar" class="thumb">
+        <figcaption>Mosaico da torcida homenageando ídolos históricos do Furacão.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="./imagens/CAPxAMG-1200-scaled.jpg" 
+             alt="João Cruz comemora o gol da Classificação" class="thumb">
+        <figcaption>João Cruz comemora o último gol do Athletico na competição.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <section aria-labelledby="gols-title">
+    <h2 id="gols-title">Gol do acesso do Furacão!</h2>
+
+    <p>
+      O Athletico venceu o América por <strong>2x0</strong> de virada, com gol de <strong>João Cruz</strong> e garantiu o acesso pra Série A!
+    </p>
+
+    <div style="display:flex; flex-direction:column; align-items:center; gap:30px; margin-top:20px;">
+
+      <div style="max-width:700px; text-align:center;">
+        <p><strong>Gol — João Cruz:</strong> Após bola enfiada do Arthur Dias, Viveros escora a bola para João Cruz, que tira do marcador e chapa a bola na bochecha da rede, sem chances para o goleiro, abrindo o placar para o Furacão, e colocando de vez o Athletico na Série A</p>
+
+        <video controls width="100%" style="border-radius:12px;">
+          <source src="./midia/joaocruzamerica1.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
+
+      <div style="max-width:700px; text-align:center;">
+        <p>Veja o gol por outro ângulo, mais próximo da torcida:</p>
+
+        <video controls width="100%" style="border-radius:12px;">
+          <source src="./midia/joaocruzamerica2.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="coletiva-title">
+    <h2 id="coletiva-title">Coletiva Pós-Jogo</h2>
+
+    <p>
+      O técnico <strong>Odair Hellmann</strong> exaltou a entrega dos jogadores, 
+      o apoio da torcida, e comemorou muito o acesso a elite.
+    </p>
+
+    <div style="display:flex; justify-content:center; margin-top:20px;">
+      <iframe width="700" height="394"
+        src="https://www.youtube.com/embed/cXa8-D8Ielw?"
+        title="Coletiva pós-jogo Athletico"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="border-radius:12px;">
+      </iframe>
+    </div>
+  </section>
+
+  <section aria-labelledby="bastidores-title">
+    <h2 id="bastidores-title">Bastidores do acesso!</h2>
+
+    <p>
+      O Athletico divulgou os bastidores mostrando a festa no vestiário, a 
+      vibração da comissão técnica e a emoção dos jogadores após o objetivo concluído.
+    </p>
+
+    <div style="display:flex; justify-content:center; margin-top:20px;">
+      <iframe width="700" height="394"
+        src="https://www.youtube.com/embed/32dUmvnRKeg?"
+        title="Bastidores da vitória do Athletico"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="border-radius:12px;">
+      </iframe>
+    </div>
+  </section>
+
+  <section aria-labelledby="tabela-title">
+    <h2 id="tabela-title">Classificação final do Campeonato.</h2>
+
+    <p>Como ficou a Série B após a vitória:</p>
+
+    <table>
+      <caption>Tabela — Brasileirão Série B 2025</caption>
+      <thead>
+        <tr>
+          <th>Posição</th>
+          <th>Time</th>
+          <th>Pontos</th>
+          <th>Vitórias</th>
+          <th>Saldo</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr><td>1°</td><td>Coritiba</td><td>68</td><td>19</td><td>+16</td></tr>
+        <tr><td>2°</td><td><strong>Athletico Paranaense</strong></td><td>65</td><td>19</td><td>+10</td></tr>
+        <tr><td>3°</td><td>Chapecoense</td><td>62</td><td>18</td><td>+17</td></tr>
+        <tr><td>4°</td><td>Remo</td><td>62</td><td>16</td><td>+12</td></tr>
+        <tr><td>5°</td><td>Criciuma</td><td>61</td><td>17</td><td>+14</td></tr>
+        <tr><td>6°</td><td>Goiás</td><td>61</td><td>17</td><td>+5</td></tr>
+      </tbody>
+
+      <tfoot>
+        <tr><td colspan="5">Tabela atualizada em 23/11/2025</td></tr>
+      </tfoot>
+    </table>
+
+    <div style="margin-top:25px;">
+      <h3>Próximo Jogo</h3>
+      <ul>
+        <li>O Furacão volta a campo em 2026, primeiramente pela Copinha, juntamente do Campeonato Paranaense, e no fim de janeiro com o Campeonato Brasileiro da Série A.</li>
+      </ul>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <section class="redes-sociais">
+    <h2>Siga o Furacão</h2>
+    <div class="links-redes">
+      <a href="https://www.instagram.com/athleticoparanaense" target="_blank">📸 Instagram</a>
+      <a href="https://x.com/AthleticoPR" target="_blank">🐦 Twitter</a>
+      <a href="https://www.youtube.com/@athleticoparanaense" target="_blank">▶️ YouTube</a>
+    </div>
+  </section>
+
+  <p>&copy; 2025 — Club Athletico Paranaense</p>
+  <button id="btnTopo" title="Voltar ao topo">↑</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -2085,6 +2085,76 @@ body.modo-claro .galeria-treinos figcaption {
   }
 }
 
+.paginacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+
+/* Botões padrão */
+.pagina {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #444;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.pagina:hover {
+  background: #aa0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+/* Página ativa */
+.pagina.ativa {
+  background: linear-gradient(90deg, #a00, #ff3333);
+  box-shadow: 0 0 14px rgba(255, 0, 0, 0.7);
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Botões Anterior / Próxima */
+.pagina.nav {
+  background: #000;
+  border: 1px solid #aa0000;
+}
+
+.pagina.nav:hover {
+  background: #ff3333;
+  color: #fff;
+}
+
+
+/* Imagens dentro das notícias */
+.noticia-card img {
+  width: 100%;
+  height: auto;              /* 🔑 deixa a imagem decidir a altura */
+  max-height: none;          /* 🔑 remove o limite que causa o corte */
+  object-fit: contain;       /* garante que nada seja cortado */
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  background: #000;          /* mantém fundo bonito */
+}
+
+
+.img-infografico {
+  width: 100%;
+  max-width: 600px;   /* controla o tamanho */
+  height: auto;
+  object-fit: contain;
+  margin: 25px auto;
+  display: block;
+}
+
+
 
 
 

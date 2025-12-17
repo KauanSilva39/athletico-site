@@ -1100,13 +1100,8 @@ function salvarTimePNG() {
   });
 }
 
-/* ============================
-   ATIVAR O BOTÃO DO PNG
-=============================== */
-
 if (window.location.pathname.includes("time352.html")) {
 
-  // ← ESTE é o correto (fora do outro DOMContentLoaded)
   window.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("btnSalvarPNG");
 
@@ -1121,15 +1116,4 @@ if (window.location.pathname.includes("time352.html")) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-}); // fim DOMContentLoaded
+}); 
